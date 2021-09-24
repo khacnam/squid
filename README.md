@@ -2,5 +2,8 @@
 Squid Proxy Manager
 
 ```
-git clone https://github.com/khacnam/squid.git
+git clone https://github.com/khacnam/squid
+./.git
+cd squid
+./initialize.sh
 ```
