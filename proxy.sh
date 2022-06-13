@@ -1,12 +1,4 @@
 #!/bin/bash
-#########################################################
-#                                                       #
-#                               Squid Proxy Script      #
-#                               Prepared By: Varun      #
-#                               Version 1.0             #
-#                                                       #
-#########################################################
-
 ###Global Variables
 OS=`uname -s`
 DISTRIB=`cat /etc/*release* | grep -i DISTRIB_ID | cut -f2 -d=`
