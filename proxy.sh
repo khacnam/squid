@@ -121,7 +121,7 @@ Menu_1()
     NEWIP="$IP.$J.$I"
     I=$((I+1))
     M=$((M+1))
-    mysql -h localhost -u $MYSQLUSER  $MYSQLDB -e "insert into IPMASTER (IPADDRESS,STATUS,MUL,USED) values (INET_ATON('$NEWIP'),0,2,0);"
+    mysql -h localhost -u $MYSQLUSER  $MYSQLDB -e "insert into IPMASTER (IPADDRESS,STATUS,MUL,USED) values (INET_ATON('$NEWIP'),0,1,0);"
     ip addr add $NEWIP/$S dev $INT
         touch /etc/network/interfaces.d/${NEWIP}
         echo "auto $INT" >> /etc/network/interfaces.d/${NEWIP}
